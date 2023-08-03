@@ -17,7 +17,7 @@ router.get("/", function (req, res, next) {
       
     console.log(req.body);
 
-    var data = await usuariosModel.getUserAndPassword
+    var data = await usuariosModel.getUserByUserAndPassword
     (usuario,password);
 
     if ( data != undefined){

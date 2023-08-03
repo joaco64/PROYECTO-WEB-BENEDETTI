@@ -12,4 +12,4 @@ catch (error) {
 }
 
 
-module.export = { getUserByUserAndPassword}
+module.exports = { getUserByUserAndPassword}
