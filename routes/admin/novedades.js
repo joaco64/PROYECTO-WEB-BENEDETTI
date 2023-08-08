@@ -1,11 +1,22 @@
 var express = require("express");
 var router = express.Router();
+var novedadesModel = require('../../models/novedadesModels')
 
-router.get("/", function (req, res, next) {
-    res.render('admin/novedades', {
+router.get("/", async function (req, res, next) {
+    
+   var novedades = await novedadesModel.getNovedades();
+   
+   res.render('admin/novedades', {
        layout:'admin/layout' ,
-       usuario: req.session.nombre
+       usuario: req.session.nombre, novedades
     });
+  });
+
+
+  router.get('/eliminar/:Id', async ( req, res, next) => {
+   const id = req.params.Id;
+   await novedadesModel.deleteNovedadesById(id);
+   res.redirect('/admin/novedades')
   });
 
   module.exports = router;
