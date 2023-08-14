@@ -18,7 +18,7 @@
       <h2> LISTADO DE PATAS FLAMEADAS</h2>
     </div>
     <div class="col-5 text-end">
-      <a href="" class="btn btn-success"><i class="bi bi-plus-circle"></i>
+      <a href="/admin/novedades/agregar" class="btn btn-success"><i class="bi bi-plus-circle"></i>
         Nuevo</a>
 
     </div>
@@ -37,13 +37,13 @@
           <tbody>
             {{#each novedades}}
             <tr>
-              <th scope="row">{{Id}}</th>
+              <th scope="row">{{id}}</th>
               <td>{{Titulo}}</td>
               <td class="text-end">
-                <a href="" class="btn btn-secondary"><i
+                <a href="/admin/novedades/modificar/{{id}}" class="btn btn-secondary"><i
                     class="bi bi-pencil-fill"
                   ></i></a>
-                <a href=" /admin/novedades/eliminar/{{Id}}" class="btn btn-secondary"><i
+                <a href=" /admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i
                     class="bi bi-trash3-fill"
                   ></i></a>
               </td>
