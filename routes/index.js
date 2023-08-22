@@ -44,7 +44,7 @@ router.post("/", async (req, res, next) => {
     subject: "Contacto desde la web",
     html:
       nombre + " " + apellido +
-      "se contacto a traves de la web y quiere mas informacion a este correo : " + email + ".<br> ademas ,  hizo estes comentario:"+mensaje+ ".<br> su tel es: " +tel
+      " se contacto a traves de la web y quiere mas informacion a este correo : " + email + ".<br> ademas ,  hizo este comentario: " +mensaje+ ".<br> su tel es: " +tel
      
   }; // CIERRE OBJ
 
