@@ -82,7 +82,7 @@
                                 <div class="testimonio">
                                     <h5> exquisita, el fondo de coccion deja a la carne
                                         muy jugosa y sabrosa !</h5>
-                                    <p> Flavia, carlos paz</p>
+                                    <p> Joaquin, Barrio Parque</p>
                                 </div>
                             </div>
                         </div>
@@ -190,11 +190,10 @@
     
                         <h2>Visitanos</h2>
                         <div class="mapa">
-                            <iframe   src="
-                             https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2229629719377!2d-58.422641224548805!3d-34.598523072956134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2e1493a6a3%3A0x1862a7c0b8163e5d!2sUTN.BA!5e0!3m2!1ses-419!2sar!4v1685633847631!5m2!1ses-419!2sar"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            <iframe   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13618.543166937876!2d-64.2121293!3d-31.4241592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2714fd70b5b%3A0x9174801b081e0bc8!2sBenedetti!5e0!3m2!1ses-419!2sar!4v1692797511363!5m2!1ses-419!2sar" 
+                               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
-    
+
                         </div>
                     </div>
                
@@ -228,7 +227,9 @@
                           <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                       </form>
-                      <p> {{{message}}}</p>
+                      {{#if message}}
+                      <p> {{message}}</p>
+                      {{/if}}
     
                     </div><!--cierre seccion visitanos.-->
                 </div> 
